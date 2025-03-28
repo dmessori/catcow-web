@@ -58,7 +58,7 @@ export default function Footer() {
 
         {/* Award */}
         <div className="flex flex-col items-center justify-center text-center">
-          <img src="/icons/aaa_logo.svg" 
+        <img src="/aaa_logo.svg" 
             alt="American Advertising Awards"
             width={200}
             height={120}
