@@ -9,6 +9,10 @@ export default function Home() {
       <div className="px-6 md:px-12 lg:px-6 xl:px-4">
         <Header />
         <WorkGrid />
+           {/* Aquí insertamos el Newsletter */}
+              <div className="mt-20">
+                <NewsletterSignup />
+              </div>
       </div>
       <Footer />
 
