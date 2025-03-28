@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&display=swap');
+
+@font-face {
+  font-family: 'Vercetti';
+  src: url('/fonts/Vercetti-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*clase personalizada */
+.headline {
+  font-family: 'Vercetti', sans-serif;
+  font-size: 26pt;
+  line-height: 1.3;
+  color: #155cfb;
+  font-weight: normal;
+}
+
+.vercetti {
+  font-family: 'Vercetti', sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-geist-sans: 'Inter', sans-serif;
+  --font-geist-mono: 'Courier New', monospace;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  @apply font-sans;
+}
+@font-face {
+  font-family: 'Newake';
+  src: url('/fonts/NewakeFont-Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.newake {
+  font-family: 'Newake', sans-serif;
+}
+
+.link-underline {
+  @apply relative inline-block 
+    after:block after:h-[2px] after:bg-blue-600 
+    after:scale-x-0 after:transition-transform 
+    after:duration-300 after:origin-left 
+    hover:after:scale-x-100;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 55s linear infinite;
+}
+ 
