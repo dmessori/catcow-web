@@ -6,6 +6,7 @@ export default function Footer() {
     <footer className="bg-[#f0f0f0] px-12 pt-12 pb-0">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mx-auto">
         {/* Logo + Address */}
+        
         {/* Columna principal unificada */}
 <div className="flex flex-col gap-8">
   {/* Fila 1: Título */}
@@ -57,8 +58,7 @@ export default function Footer() {
 
         {/* Award */}
         <div className="flex flex-col items-center justify-center text-center">
-          <Image
-            src="/icons/aaa_logo.svg"
+          <img src="/icons/aaa_logo.svg" 
             alt="American Advertising Awards"
             width={200}
             height={120}
