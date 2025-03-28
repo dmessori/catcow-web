@@ -1,32 +1,37 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
-    return (
-      <header className="w-full px-6 py-8">
-  <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+  return (
+    <header className="w-full px-6 py-8">
+  <div className="flex flex-col gap-6 md:flex-row md:justify-between md:items-center">
     
-    {/* Logo + Headline en fila */}
-    <div className="flex items-center gap-6">
-      <img src="/logo-catcow.svg" alt="CatCow logo" width={230} />
-      <p className="headline max-w-[55%] ml-10">
-        CatCow is a creative studio that brings bold stories and wild ideas to life through animation, design, and a whole lot of heart.
-      </p>
+    {/* Logo */}
+    <div className="w-full flex justify-start md:w-auto">
+      <img
+        src="/logo-catcow.svg"
+        alt="CatCow logo"
+        width={480}
+        height={60}
+        className="w-auto h-auto md:w-[480px] md:h-auto"
+      />
     </div>
 
-    {/* Menú */}
-    <nav className="flex items-center gap-6 font-vercetti text-[18px] md:text-[20px] text-blue-600 font-medium">
-  <Link href="/work" className="link-underline hidden md:block">Work</Link>
-  <Link href="/about" className="link-underline hidden md:block">About</Link>
-  <a href="https://kf-lpdx.com" target="_blank" rel="noopener noreferrer" className="link-underline hidden md:block">KFL&nbsp;PDX</a>
-  <Link href="/contact" className="link-underline hidden md:block">Contact</Link>
-  <Link href="/work" className="text-[26px]" aria-label="Menu">☰</Link>
-</nav>
+    {/* Headline */}
+    <p className="headline w-full text-left leading-snug text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] md:max-w-[55%]">
+      CatCow is a creative studio that brings bold stories and wild ideas to life through animation, design, and a whole lot of heart.
+    </p>
 
-
-
+    {/* Nav */}
+    <nav className="flex flex-nowrap items-center justify-start gap-3 w-full text-blue-600 font-medium text-[16px] md:justify-end md:text-[20px] font-vercetti">
+      <a className="link-underline" href="/work">Work</a>
+      <a className="link-underline" href="/about">About</a>
+      <a className="link-underline" href="https://kf-lpdx.com" target="_blank" rel="noopener noreferrer">KFL PDX</a>
+      <a className="link-underline" href="/contact">Contact</a>
+      <a href="/menu" className="text-[22px]" aria-label="Menu">☰</a>
+    </nav>
   </div>
 </header>
 
-    );
-  }
-  
+  );
+}

@@ -11,16 +11,16 @@ export default function Footer() {
 <div className="flex flex-col gap-8">
   {/* Fila 1: Título */}
   <div>
-  <h2 className="text-[82px] newake text-blue-600 leading-none">
-      CatCow.tv
-    </h2>
-    <h3 className="text-[50px] newake text-blue-600 leading-none">
-      Portland, Oregon.
-    </h3>
+  <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[82px] newake text-blue-600 leading-none">
+  CatCow.tv
+</h2>
+    <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl newake text-blue-600 leading-none">
+  Portland, Oregon.
+</h3>
   </div>
 
   {/* Fila 2: Dirección + Contacto */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-16 text-black text-[17px]">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 text-black text-[17px]">
     {/* Dirección */}
     <div>
       <p className="font-bold">HQ Address</p>
@@ -41,11 +41,9 @@ export default function Footer() {
     <p className="text-black text-base md:text-lg">
       Sign up for our newsletter — all fam, no spam.
     </p>
-    <div className="flex gap-2 mt-2">
+    <div className="flex flex-col md:flex-row gap-2 mt-2">
       <input
-        type="email"
-        placeholder="Email"
-        className="w-[320px] px-4 py-2 rounded border"
+        type="email" placeholder="Email" className="w-full md:w-[320px] px-4 py-2 rounded border"
       />
       <button className="bg-black text-white px-6 py-2 rounded-full">
         Signup
@@ -57,7 +55,8 @@ export default function Footer() {
       
 
         {/* Award */}
-        <div className="flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col items-start justify-start text-left md:items-center md:justify-center md:text-center">
+
         <Image src="/aaa_logo.svg" alt="AAA Awards Logo" width={200} height={120} />
           <p className="font-bold text-black">Gold Winner</p>
         </div>
