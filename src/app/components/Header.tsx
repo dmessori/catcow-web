@@ -19,7 +19,7 @@ export default function Header() {
   <Link href="/about" className="link-underline hidden md:block">About</Link>
   <a href="https://kf-lpdx.com" target="_blank" rel="noopener noreferrer" className="link-underline hidden md:block">KFL&nbsp;PDX</a>
   <Link href="/contact" className="link-underline hidden md:block">Contact</Link>
-  <Link href="/menu" className="text-[26px]" aria-label="Menu">☰</Link>
+  <Link href="/work" className="text-[26px]" aria-label="Menu">☰</Link>
 </nav>
 
 
