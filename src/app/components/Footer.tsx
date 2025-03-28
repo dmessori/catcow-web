@@ -58,12 +58,7 @@ export default function Footer() {
 
         {/* Award */}
         <div className="flex flex-col items-center justify-center text-center">
-        <Image src="/aaa_logo.svg" 
-            alt="AAA Awards Logo"
-            width={200}
-            height={120}
-            className="mb-2"
-          />
+        <Image src="/aaa_logo.svg" alt="AAA Awards Logo" width={200} height={120} />
           <p className="font-bold text-black">Gold Winner</p>
         </div>
 
