@@ -30,7 +30,7 @@ export default function WorkGrid() {
                 <div className="flex items-center gap-1 text-blue-600 text-sm shrink-0">
                   <span>Work</span>
                   <img src="/eye.svg"
-                    alt="View icon"
+                    alt="icon enter view"
                     width={22}
                     height={22}
                     className="inline-block"
@@ -56,7 +56,7 @@ export default function WorkGrid() {
                 <div className="flex items-center gap-1 text-blue-600 text-sm shrink-0">
                   <span>Work</span>
                   <img src="/eye.svg"
-                    alt="View icon"
+                    alt="icon enter view"
                     width={22}
                     height={22}
                     className="inline-block"
@@ -84,7 +84,7 @@ export default function WorkGrid() {
                 <div className="flex items-center gap-1 text-blue-600 text-sm shrink-0">
                   <span>Work</span>
                   <img src="/eye.svg"
-                    alt="View icon"
+                    alt="icon enter view"
                     width={22}
                     height={22}
                     className="inline-block"
@@ -109,7 +109,7 @@ export default function WorkGrid() {
                 <div className="flex items-center gap-1 text-blue-600 text-sm shrink-0">
                   <span>Work</span>
                   <img src="/eye.svg"
-                    alt="View icon"
+                    alt="icon enter view"
                     width={22}
                     height={22}
                     className="inline-block"
