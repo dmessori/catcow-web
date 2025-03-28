@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import WorkGrid from "./components/WorkGrid";
-import NewsletterSignup from "./components/NewsletterSignup";
 import Footer from "./components/Footer";
 
 export default function Home() {
