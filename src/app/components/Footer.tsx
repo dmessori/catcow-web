@@ -43,7 +43,7 @@ export default function Footer() {
     </p>
     <div className="flex flex-col md:flex-row gap-2 mt-2">
       <input
-        type="email" placeholder="Email" className="w-full md:w-[320px] px-4 py-2 rounded border"
+        type="email" placeholder="Email"  name="email" className="w-full md:w-[320px] px-4 py-2 rounded border"
       />
       <button className="bg-black text-white px-6 py-2 rounded-full">
         Signup

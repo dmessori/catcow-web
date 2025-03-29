@@ -1,3 +1,5 @@
+'use client';
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -6,8 +8,7 @@ export default function Header() {
     
     {/* Logo */}
     <div className="w-full flex justify-start md:w-auto">
-      <img
-        src="/logo-catcow.svg"
+      <Image src="/images/logo-catcow.svg"
         alt="CatCow logo"
         width={480}
         height={60}

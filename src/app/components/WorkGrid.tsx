@@ -31,7 +31,7 @@ export default function WorkGrid() {
                 {/* "Work" alineado a la derecha */}
                 <div className="hidden md:flex items-center gap-1 text-blue-600 text-sm shrink-0">
                   <span>Work</span>
-                  <Image src="/icons/eye.svg" alt="icon enter view" width={22} height={22} style={{ height: "auto" }} className="inline-block"/>
+                  <Image src="/images/ojos-03.svg" alt="icon enter view" width={22} height={22} style={{ height: "auto" }} className="inline-block"/>
                 </div>
           </div>
         </Link>
@@ -52,7 +52,7 @@ export default function WorkGrid() {
                 {/* "Work" alineado a la derecha */}
                 <div className="hidden md:flex items-center gap-1 text-blue-600 text-sm shrink-0">
                   <span>Work</span>
-                  <Image src="/icons/eye.svg" alt="icon enter view"
+                  <Image src="/images/ojos-03.svg" alt="icon enter view"
                     width={22}
                     height={22}
                     style={{ height: "auto" }} 
@@ -80,7 +80,7 @@ export default function WorkGrid() {
                 {/* "Work" alineado a la derecha */}
                 <div className="hidden md:flex items-center gap-1 text-blue-600 text-sm shrink-0">
                   <span>Work</span>
-                  <Image src="/icons/eye.svg" alt="icon enter view"
+                  <Image src="/images/ojos-03.svg" alt="icon enter view"
                     width={22}
                     height={22}
                     style={{ height: "auto" }} 
@@ -105,7 +105,7 @@ export default function WorkGrid() {
                 {/* "Work" alineado a la derecha */}
                 <div className="hidden md:flex items-center gap-1 text-blue-600 text-sm shrink-0">
                   <span>Work</span>
-                  <Image src="/icons/eye.svg" alt="icon enter view"
+                  <Image src="/images/ojos-03.svg" alt="icon enter view"
                     width={22}
                     height={22}
                     style={{ height: "auto" }} 
