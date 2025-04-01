@@ -38,7 +38,7 @@ export default function WorkGrid() {
 
 
         {/* Secondary Project (40%) */}
-        <Link href="#" className="w-full md:w-[40%] group">
+        <Link href="/work/vitalant" className="w-full md:w-[40%] group">
           <div className="bg-gray-300 aspect-video relative">
             <Image src="/images/vitalant.png" alt="Project 2" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
           </div>

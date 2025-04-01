@@ -12,6 +12,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.container-base {
+  @apply px-6 md:px-12 xl:px-32;
+}
+
 /*clase personalizada */
 .headline {
   font-family: 'Vercetti', sans-serif;
@@ -75,3 +79,17 @@ body {
   animation: marquee 55s linear infinite;
 }
  
+.project-description {
+  @apply text-gray-700 text-base leading-relaxed;
+}
+.project-title {
+  @apply font-vercetti text-[18px] text-blue-600 font-semibold uppercase;
+}
+
+.project-description {
+  @apply text-gray-700 text-base leading-relaxed;
+}
+
+.project-title {
+  @apply font-vercetti text-[18px] text-blue-600 font-semibold uppercase;
+}

@@ -1,4 +1,5 @@
 'use client';
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Header() {
@@ -8,12 +9,15 @@ export default function Header() {
     
     {/* Logo */}
     <div className="w-full flex justify-start md:w-auto">
-      <Image src="/images/logo-catcow.svg"
-        alt="CatCow logo"
-        width={480}
-        height={60}
-        className="w-auto h-auto md:w-[480px] md:h-auto"
-      />
+    <Link href="/" aria-label="Go to homepage">
+    <Image
+      src="/images/logo-catcow.svg"
+      alt="CatCow logo"
+      width={480}
+      height={60}
+      className="w-auto h-auto md:w-[480px] md:h-auto"
+    />
+  </Link>
     </div>
 
     {/* Headline */}
@@ -23,7 +27,7 @@ export default function Header() {
 
     {/* Nav */}
     <nav className="flex flex-nowrap items-center justify-start gap-3 w-full text-blue-600 font-medium text-[16px] md:justify-end md:text-[20px] font-vercetti">
-      <a className="link-underline" href="/work">Work</a>
+      <a className="link-underline" href="/work/vitalant">Work</a>
       <a className="link-underline" href="/about">About</a>
       <a className="link-underline" href="https://kf-lpdx.com" target="_blank" rel="noopener noreferrer">KFL PDX</a>
       <a className="link-underline" href="/contact">Contact</a>

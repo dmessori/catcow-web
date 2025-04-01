@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CatCow",
+  title: "🐱🐮CatCow.tv – Animation & Design Studio",
   description: "A creative studio that brings stories to life.",
 };
 
