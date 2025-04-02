@@ -5,17 +5,17 @@ import Footer from "@/app/components/Footer";
 import Image from "next/image";
 
 type ProjectPageProps = {
-    params: {
-      slug: string;
-    };
+  params: {
+    slug: string;
   };
-  
-  export default function ProjectPage({ params }: ProjectPageProps) {
-    const project = projects[params.slug as keyof typeof projects];
-    
-    if (!project) return notFound();
-  
-    return (
+};
+
+export default function ProjectPage({ params }: ProjectPageProps) {
+  const project = projects[params.slug as keyof typeof projects];
+
+  if (!project) return notFound();
+
+  return (
     <>
     <main className="bg-[#fbfbfb] min-h-screen">
 
