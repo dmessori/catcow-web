@@ -1,12 +1,14 @@
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import Image from "next/image";
+import type { PageProps } from "next";
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects"; // ✅ Import correcto, sin conflictos inside Page
 
 
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+export default function ProjectPage({ params }: PageProps<{ slug: string }>) {
+
     const slug = params.slug as keyof typeof projects;
     const project = projects[slug];
 
