@@ -36,11 +36,11 @@ export default function Header({ showHeadline = true }: HeaderProps) {
 
         {/* Nav */}
         <nav className="flex flex-nowrap items-center justify-start gap-3 w-full text-blue-600 font-medium text-[16px] md:justify-end md:text-[20px] vercetti">
-          <a className="link-underline" href="/work/vitalant">Work</a>
-          <a className="link-underline" href="/about">About</a>
+          <Link href="/work/vitalant" className="link-underline">Work</Link>
+          <Link href="/about" className="link-underline">About</Link>
           <a className="link-underline" href="https://kf-lpdx.com" target="_blank" rel="noopener noreferrer">KFL PDX</a>
-          <a className="link-underline" href="/contact">Contact</a>
-          <a href="/menu" className="text-[22px]" aria-label="Menu">☰</a>
+          <Link href="/contact" className="link-underline">Contact</Link>
+          <Link href="/menu" className="text-[22px]" aria-label="Menu">☰</Link>
         </nav>
       </div>
     </header>
