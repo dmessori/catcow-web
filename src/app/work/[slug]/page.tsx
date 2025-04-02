@@ -7,7 +7,13 @@ import Image from "next/image";
 
 
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+import { type Metadata } from "next";
+
+type Props = {
+  params: { slug: string };
+};
+
+export default function ProjectPage({ params }: Props) {
   const project = projects[params.slug as keyof typeof projects];
 
   if (!project) return notFound();
