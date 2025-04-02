@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <main className="bg-[#fbfbfb] min-h-screen">
-      <div class="px-6 md:px-10 lg:px-16 xl:px-8">
+      <div className="px-6 md:px-10 lg:px-16 xl:px-8">
         <Header />
         <WorkGrid />
       </div>

@@ -6,17 +6,14 @@ import Footer from "@/app/components/Footer";
 import Image from "next/image";
 
 // ✅ Este es el tipado correcto para rutas dinámicas en Next.js 15
-type Props = {
-  params: {
-    slug: string;
-  };
-};
 
-export default function ProjectPage({ params }: Props) {
-  const project = projects[params.slug as keyof typeof projects];
-  if (!project) return notFound();
 
-  return (
+export default function ProjectPage({ params }: { params: { slug: string } }) {
+    const project = projects[params.slug as keyof typeof projects];
+  
+    if (!project) return notFound();
+  
+    return (
     <>
     <main className="bg-[#fbfbfb] min-h-screen">
 
