@@ -25,7 +25,7 @@ export default function WorkGrid() {
           <div className="pt-4 flex justify-between items-start">
               {/* Título + Descripción alineados a la izquierda */}
               <div>
-              <h2 className="text-[22px] font-vercetti font-bold text-blue-600 md:text-xl">Fior di Maso Comercial</h2>
+              <h2 className="text-[22px] font-bold text-blue-600 md:text-xl vercetti">Fior di Maso Comercial</h2>
                 <p className="text-gray-500 text-base w-full md:w-[70%]">A handcrafted identity for a family-owned cheese company rooted in Italian tradition. We blended rustic charm with modern minimalism to tell a story of flavor, heritage, and timeless craftsmanship — transforming Fior di Maso into a bold, contemporary brand that still feels like home.</p>
               </div>
                 {/* "Work" alineado a la derecha */}
@@ -46,7 +46,7 @@ export default function WorkGrid() {
           <div className="pt-4 flex justify-between items-start">
               {/* Título + Descripción alineados a la izquierda */}
               <div>
-                <h2 className="text-[22px] font-vercetti font-bold text-blue-600 md:text-xl">Vitalant – Blood Donation Campaign</h2>
+                <h2 className="text-[22px] font-bold text-blue-600 md:text-xl vercetti">Vitalant – Blood Donation Campaign</h2>
                 <p className="text-gray-500 text-base w-full md:w-[70%]">We partnered with Vitalant to bring urgency and emotion to the forefront of blood donation. Through dynamic animation and human-centered storytelling, we crafted a powerful campaign that highlights how just a few seconds can save a life. A bold visual language meets a compassionate call to action — inspiring audiences to give more than blood: to give hope.</p>
               </div>
                 {/* "Work" alineado a la derecha */}
@@ -74,7 +74,7 @@ export default function WorkGrid() {
           <div className="pt-4 flex justify-between items-start">
               {/* Título + Descripción alineados a la izquierda */}
               <div>
-                <h2 className="text-xl font-vercetti font-bold text-blue-600">Fior di Maso Comercial</h2>
+                <h2 className="text-xl font-bold text-blue-600 vercetti">Fior di Maso Comercial</h2>
                 <p className="text-gray-500 text-base w-full md:w-[70%]">A handcrafted identity for a family-owned cheese company rooted in Italian tradition. We blended rustic charm with modern minimalism to tell a story of flavor, heritage, and timeless craftsmanship — transforming Fior di Maso into a bold, contemporary brand that still feels like home.</p>
               </div>
                 {/* "Work" alineado a la derecha */}
@@ -99,7 +99,7 @@ export default function WorkGrid() {
           <div className="pt-4 flex justify-between items-start">
               {/* Título + Descripción alineados a la izquierda */}
               <div>
-                <h2 className="text-xl font-vercetti font-bold text-blue-600">Fior di Maso Comercial</h2>
+                <h2 className="text-xl font-bold text-blue-600 vercetti">Fior di Maso Comercial</h2>
                 <p className="text-gray-500 text-base w-full md:w-[70%]">A handcrafted identity for a family-owned cheese company rooted in Italian tradition. We blended rustic charm with modern minimalism to tell a story of flavor, heritage, and timeless craftsmanship — transforming Fior di Maso into a bold, contemporary brand that still feels like home.</p>
               </div>
                 {/* "Work" alineado a la derecha */}

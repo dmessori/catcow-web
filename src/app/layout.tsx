@@ -13,9 +13,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "🐱🐮CatCow.tv – Animation & Design Studio",
-  description: "A creative studio that brings stories to life.",
+export const metadata = {
+  title: "CatCow.tv – Animation & Design Studio",
+  description: "Animation & Design by CatCow",
+  icons: {
+    icon: "/favicon.svg", // o .svg si usás otro tipo
+  },
 };
 
 export default function RootLayout({

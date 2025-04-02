@@ -78,18 +78,12 @@ body {
   display: inline-block;
   animation: marquee 55s linear infinite;
 }
- 
-.project-description {
-  @apply text-gray-700 text-base leading-relaxed;
-}
-.project-title {
-  @apply font-vercetti text-[18px] text-blue-600 font-semibold uppercase;
-}
 
 .project-description {
-  @apply text-gray-700 text-base leading-relaxed;
+  @apply text-[28px] text-gray-700 leading-relaxed;
 }
 
 .project-title {
-  @apply font-vercetti text-[18px] text-blue-600 font-semibold uppercase;
+  font-family: 'Vercetti', sans-serif;
+  @apply text-[28px] text-blue-600 font-semibold uppercase;
 }
