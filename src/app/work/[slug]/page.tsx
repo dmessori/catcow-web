@@ -5,11 +5,9 @@ import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import Image from "next/image";
 
-type Props = {
-  params: { slug: string };
-};
 
-export default function ProjectPage({ params }: Props) {
+
+export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = projects[params.slug as keyof typeof projects];
 
   if (!project) return notFound();
