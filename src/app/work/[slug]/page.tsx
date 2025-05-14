@@ -1,14 +1,14 @@
+
 import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import Image from "next/image";
 
-interface Props {
-    params: { slug: string };
-  }
+// ✅ Este es el tipado correcto para rutas dinámicas en Next.js 15
 
-  export default function ProjectPage({ params }: Props) {
+
+export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = projects[params.slug as keyof typeof projects];
 
   if (!project) return notFound();
