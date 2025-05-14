@@ -1,5 +1,6 @@
 'use client';
 import Link from "next/link";
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion"; // ← AGREGÁ ESTO
 import AnimatedLogo from "./AnimatedLogo";
@@ -59,7 +60,7 @@ export default function Header({ showHeadline = true }: { showHeadline?: boolean
       </button>
 
       <div className="space-y-6">
-        <Link href="/work" onClick={() => setMenuOpen(false)} className="block hover:underline">Working</Link>
+        <Link href="/work" onClick={() => setMenuOpen(false)} className="block hover:underline">Work</Link>
         <Link href="/about" onClick={() => setMenuOpen(false)} className="block hover:underline">About</Link>
         <Link href="https://kf-lpdx.com" target="_blank" rel="noopener noreferrer" className="block hover:underline">KFL PDX</Link>
         <Link href="/blog" onClick={() => setMenuOpen(false)} className="block hover:underline">Blog</Link>

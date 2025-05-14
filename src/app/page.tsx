@@ -5,7 +5,21 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
+    
     <main className="bg-[#fbfbfb] min-h-screen">
+      <section className="flex flex-col items-center justify-center text-center py-20 px-4">
+  <h1 className="text-4xl sm:text-6xl font-bold mb-6 max-w-3xl">
+    CatCow is a creative studio that brings bold stories and wild ideas to life through animation, design, and a whole lot of heart.
+  </h1>
+  <a 
+    href="/work"
+    className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-blue-700 transition"
+  >
+    See Our Work
+  </a>
+</section>
+
+
       <div className="px-6 md:px-10 lg:px-16 xl:px-8">
         <Header />
         <WorkGrid />
