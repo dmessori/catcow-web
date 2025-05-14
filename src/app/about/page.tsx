@@ -30,7 +30,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              We're not here to just make things pretty (though we do that too). We're here to connect,
+              We&apos;re not here to just make things pretty (though we do that too). We&apos;re here to connect,
               to move people, and to make magic through motion.
             </p>
 
