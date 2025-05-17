@@ -10,19 +10,21 @@ export default function WorkPage() {
     <main className="bg-[#fbfbfb] min-h-screen px-6 md:px-10 lg:px-16 xl:px-8 py-10">
       <Header showHeadline={false} />
       <div className="w-full px-6 py-8">
+
       <h1 className="text-4xl font-bold mb-10 text-blue-600 vercetti">Our Work</h1>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {Object.entries(projects).map(([slug, project]) => (
           <Link key={slug} href={`/work/${slug}`} className="group border border-gray-200 rounded-md overflow-hidden hover:bg-gray-50 transition">
             {project.thumbnail && (
-              <div className="relative aspect-video w-full">
-                <Image
-                  src={project.thumbnail}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-opacity duration-300 group-hover:opacity-80"
-                />
-              </div>
+              <div className="relative aspect-video w-full overflow-hidden">
+              <Image
+                src={project.thumbnail}
+                alt={project.title}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
             )}
             <div className="p-4">
               <h2 className="text-2xl text-blue-600 font-bold group-hover:underline">{project.title}</h2>
@@ -32,6 +34,8 @@ export default function WorkPage() {
           </Link>
         ))}
       </div>
+
+      
       </div>
       <Footer />
     </main>
