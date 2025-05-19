@@ -4,6 +4,7 @@ export const projects = {
     year: "2025",
     description: "We partnered with Vitalant to bring urgency...",
     video: "/videos/projects/vitalant/vitalant_part1.mp4",
+    thumbnail: "/images/NBX_thumb.png",
     images: [
       "/images/projects/vitalant/Vitalant_storyboard-32.png",
       "/images/projects/vitalant/scene_01.png",
@@ -36,6 +37,7 @@ export const projects = {
     thumbnail: "/images/fior_de_maso.png",
     video: "/videos/fior_teaser.mp4",
     extraVideos: [],
+    
     images: [
       "/images/fior_1.png",
       "/images/fior_2.png",
