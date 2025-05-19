@@ -1,4 +1,18 @@
-export const projects = {
+type Project = {
+  title: string;
+  year: string;
+  description: string;
+  video: string;
+  thumbnail: string;
+  images: string[];
+  extraVideos: string[];
+  nextProject: {
+    slug: string;
+    title: string;
+  };
+};
+
+export const projects: { [key: string]: Project } = {
   vitalant: {
     title: "Vitalant – Every 2 Seconds",
     year: "2025",
