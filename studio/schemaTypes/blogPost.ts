@@ -1,42 +1,35 @@
-const blogPost = {
-  name: "blogPost",
-  title: "Blog Post",
-  type: "document",
+// /studio/schemas/blogPost.ts
+import { defineField, defineType } from 'sanity'
+
+export default defineType({
+  name: 'blogPost',
+  title: 'Blog Post',
+  type: 'document',
   fields: [
-    {
-      name: "title",
-      title: "Title",
-      type: "string",
-    },
-    {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
+    defineField({
+      name: 'title',
+      title: 'Title',
+      type: 'string',
+    }),
+    defineField({
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
       options: {
-        source: "title",
+        source: 'title',
         maxLength: 96,
       },
-    },
-    {
-      name: "mainImage",
-      title: "Main Image",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
-    },
-    {
-      name: "publishedAt",
-      title: "Published at",
-      type: "datetime",
-    },
-    {
-      name: "body",
-      title: "Body",
-      type: "array",
-      of: [{ type: "block" }],
-    },
+    }),
+    defineField({
+      name: 'publishedAt',
+      title: 'Published At',
+      type: 'datetime',
+    }),
+    defineField({
+      name: 'body',
+      title: 'Body',
+      type: 'array',
+      of: [{ type: 'block' }],
+    }),
   ],
-};
-
-export default blogPost;
+})

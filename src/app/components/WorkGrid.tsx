@@ -45,7 +45,7 @@ export default function WorkGrid() {
 
 
         {/* Secondary Project (40%) */}
-       {/* Secondary Project (40%) */}
+      
         <Link href="/work/vitalant" className="w-full md:w-[40%] group">
           <div className="bg-gray-300 aspect-video relative overflow-hidden">
             <Image 
