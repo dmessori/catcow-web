@@ -1,5 +1,6 @@
 // src/app/blog/[slug]/page.tsx
 
+import type { PortableTextBlock } from '@portabletext/types'
 import { client } from '@/lib/sanityClient'
 import { PortableText } from '@portabletext/react'
 import { notFound } from 'next/navigation'
@@ -15,7 +16,7 @@ type Params = {
 type BlogPost = {
   title: string
   publishedAt: string
-  body: any
+  body: PortableTextBlock[]
 }
 
 export const revalidate = 60
