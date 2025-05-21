@@ -6,6 +6,7 @@ type Project = {
   thumbnail: string;
   images: string[];
   extraVideos: string[];
+  tags?: string[];
   nextProject: {
     slug: string;
     title: string;
@@ -18,7 +19,7 @@ export const projects: { [key: string]: Project } = {
     year: "2025",
     description: "We partnered with Vitalant to bring urgency...",
     video: "/videos/projects/vitalant/vitalant_part1.mp4",
-    thumbnail: "/images/NBX_thumb.png",
+    thumbnail: "/images/vitalant.png",
     images: [
       "/images/projects/vitalant/Vitalant_storyboard-32.png",
       "/images/projects/vitalant/scene_01.png",
@@ -45,17 +46,18 @@ export const projects: { [key: string]: Project } = {
   },
 
   "fior-di-maso": {
-    title: "Fior di Maso – Rebranding",
+    title: "Fior di Maso – Commercial",
     year: "2025",
     description: "We helped Fior di Maso modernize their brand while preserving tradition. With warm pastels and rustic textures, this rebrand is a balance of charm and clarity.",
     thumbnail: "/images/fior_de_maso.png",
-    video: "/videos/fior_teaser.mp4",
+    video: "/videos/projects/fior-di-maso/FIORDEMASO.mp4",
+    tags: ["film", "experimental"],
     extraVideos: [],
     
     images: [
-      "/images/fior_1.png",
-      "/images/fior_2.png",
-      "/images/fior_3.png"
+      "/images/projects/fior-di-maso/Storyboard-01.png",
+      "/images/projects/fior-di-maso/Storyboard-02.png",
+      "/images/projects/fior-di-maso/Storyboard-03.png"
     ],
     nextProject: {
       slug: "vitalant",
@@ -70,6 +72,7 @@ export const projects: { [key: string]: Project } = {
     thumbnail: "/images/blueheart-thumb.jpg",
     extraVideos: [],
     video: "/videos/blueheart_intro.mp4",
+    tags: ["film", "experimental"],
     images: [
       "/images/blueheart_01.png",
       "/images/blueheart_02.png"
@@ -87,6 +90,7 @@ export const projects: { [key: string]: Project } = {
     thumbnail: "/images/fubo_thumb.jpg",
     extraVideos: [],
     video: "/videos/fubo_reel.mp4",
+    tags: ["film", "experimental"],
     images: [
       "/images/fubo_01.png",
       "/images/fubo_02.png"
@@ -104,6 +108,7 @@ export const projects: { [key: string]: Project } = {
     thumbnail: "/images/NBX_thumb.png",
     extraVideos: [],
     video: "/videos/nbx_showreel.mp4",
+    tags: ["film", "experimental"],
     images: [
       "/images/nbx_01.jpg"
     ],
@@ -120,6 +125,7 @@ export const projects: { [key: string]: Project } = {
     thumbnail: "/images/amfam_catcow.png",
     extraVideos: [],
     video: "/videos/amfam_main.mp4",
+    tags: ["film", "experimental"],
     images: [
       "/images/amfam_01.png"
     ],
@@ -136,6 +142,7 @@ export const projects: { [key: string]: Project } = {
     thumbnail: "/images/convey-thumb.gif",
     extraVideos: [],
     video: "/videos/convey_demo.mp4",
+    tags: ["film", "experimental"],
     images: [
       "/images/convey_01.png",
       "/images/convey_02.png"
@@ -153,6 +160,7 @@ export const projects: { [key: string]: Project } = {
     thumbnail: "/images/bio_1.jpg",
     extraVideos: [],
     video: "/videos/bioforward_intro.mp4",
+    tags: ["film", "experimental"],
     images: [
       "/images/bio_02.jpg"
     ],

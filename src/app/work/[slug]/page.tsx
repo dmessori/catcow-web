@@ -33,7 +33,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         </div>
 
         {/* Main Video */}
-        <div className="relative aspect-video bg-black mb-8 overflow-hidden">
+        <div className="relative aspect-video bg-[#ff0000] mb-8 overflow-hidden">
           <video
             className="w-full h-full object-cover"
             src={project.video}

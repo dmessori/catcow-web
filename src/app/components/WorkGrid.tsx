@@ -13,7 +13,7 @@ export default function WorkGrid() {
         
         
         {/* Main Project (60%)------------------------------- */}
-        <Link href="#" className="w-full md:w-[60%] group">
+        <Link href="/work/fior-di-maso" className="w-full md:w-[60%] group">
           {/* Imagen */}
           <div className="bg-gray-300 aspect-video relative overflow-hidden">
             <Image
